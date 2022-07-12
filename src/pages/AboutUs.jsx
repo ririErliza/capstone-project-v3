@@ -65,8 +65,8 @@ const AboutUs = () => {
         
         
            {teams.map((teamMember) => (
-            <Col xs={6} md={3} >
-              <div key={teamMember.id}>
+            <Col xs={6} md={3} key={teamMember.id}>
+              <div >
                 <img
                     src={teamMember.image}
                     width="150"
