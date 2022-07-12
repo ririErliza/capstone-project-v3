@@ -1,0 +1,60 @@
+[
+    {   "id":1,
+        "city": "Depok",
+        "latitude": "-6.360191",
+        "longitude": "106.827228",
+        "address" : "Jalan Melati No.2, Depok",
+        "link":"https://www.google.com/maps/place/6%C2%B021'36.7%22S+106%C2%B049'38.0%22E/@-6.3601857,106.8250339,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe5edbb81426e09e4!8m2!3d-6.360191!4d106.827228"
+    },
+    {   "id":2,
+        "city": "Cilegon",
+        "latitude": "-5.996598",
+        "longitude": "106.031528",
+        "address" : "Jalan Tirtayasa No.9, Cilegon",
+        "link":"https://www.google.com/maps/place/6%C2%B021'36.7%22S+106%C2%B049'38.0%22E/@-6.3601857,106.8250339,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe5edbb81426e09e4!8m2!3d-6.360191!4d106.827228"
+    },
+    {   "id":3,
+        "city": "Bandung",
+        "latitude": "-6.893368",
+        "longitude": "107.617230",
+        "address" : "Jalan H.Yamin No.2, Bandung",
+        "link":"https://www.google.com/maps/place/6%C2%B021'36.7%22S+106%C2%B049'38.0%22E/@-6.3601857,106.8250339,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe5edbb81426e09e4!8m2!3d-6.360191!4d106.827228"
+    },
+    {   "id":4,
+        "city": "Jogjakarta",
+        "latitude": "-7.771057",
+        "longitude": "110.377565",
+        "address" : "Jalan Jend.Sudirman No.21, Jogjakarta",
+        "link":"https://www.google.com/maps/place/6%C2%B021'36.7%22S+106%C2%B049'38.0%22E/@-6.3601857,106.8250339,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe5edbb81426e09e4!8m2!3d-6.360191!4d106.827228"
+    },
+    {   "id":5,
+        "city": "Semarang",
+        "latitude": "-7.051931",
+        "longitude": "110.440903",
+        "address" : "Jalan Kampar No.12, Semarang",
+        "link":"https://www.google.com/maps/place/6%C2%B021'36.7%22S+106%C2%B049'38.0%22E/@-6.3601857,106.8250339,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe5edbb81426e09e4!8m2!3d-6.360191!4d106.827228"
+    },
+    {   "id":6,
+        "city": "Surabaya",
+        "latitude": "-7.282467",
+        "longitude": "112.794939",
+        "address" : "Jalan Bungur Utara No.32, Surabaya",
+        "link":"https://www.google.com/maps/place/6%C2%B021'36.7%22S+106%C2%B049'38.0%22E/@-6.3601857,106.8250339,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe5edbb81426e09e4!8m2!3d-6.360191!4d106.827228"
+    },
+    {   "id":7,
+        "city": "Malang",
+        "latitude": "-7.952482",
+        "longitude": "112.614466",
+        "address" : "Jalan Kutilang No.67, Malang",
+        "link":"https://www.google.com/maps/place/6%C2%B021'36.7%22S+106%C2%B049'38.0%22E/@-6.3601857,106.8250339,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe5edbb81426e09e4!8m2!3d-6.360191!4d106.827228"
+    },
+    {   "id":8,
+        "city": "Lampung",
+        "latitude": "-5.358139",
+        "longitude": "105.314845",
+        "address" : "Jalan Way Hui No.56, Lampung",
+        "link":"https://www.google.com/maps/place/6%C2%B021'36.7%22S+106%C2%B049'38.0%22E/@-6.3601857,106.8250339,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe5edbb81426e09e4!8m2!3d-6.360191!4d106.827228"
+    }
+]
+    
+        

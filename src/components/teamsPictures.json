@@ -1,0 +1,52 @@
+[
+    {
+      "id": 0,
+      "image": "/assets/teams-pictures/1.png",
+      "name": "Cecilia"
+
+    },
+    {
+        "id": 1,
+        "image": "/assets/teams-pictures/2.png",
+        "name": "Gayatri"
+  
+    },
+    {
+        "id": 2,
+        "image": "/assets/teams-pictures/3.png",
+        "name": "Nasya"
+  
+    },
+    {
+        "id": 3,
+        "image": "/assets/teams-pictures/4.png",
+        "name": "Dian"
+  
+    },
+    {
+        "id": 4,
+        "image": "/assets/teams-pictures/5.png",
+        "name": "Ahmad"
+  
+    },
+    {
+        "id": 5,
+        "image": "/assets/teams-pictures/6.png",
+        "name": "Bram"
+  
+    },
+    {
+        "id": 8,
+        "image": "/assets/teams-pictures/9.png",
+        "name": "Masudi"
+  
+    },
+    {
+        "id": 9,
+        "image": "/assets/teams-pictures/recycling.png",
+        "name": ""
+  
+    }
+
+
+]
