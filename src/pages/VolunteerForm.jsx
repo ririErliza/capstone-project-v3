@@ -54,7 +54,7 @@ const VolunteerForm = () => {
                 location:'Depok',
                 duration: '3 Months',
             });
-
+            setSubmitting(false);
             window.location="/success";
           } else {
             // aww snap!
