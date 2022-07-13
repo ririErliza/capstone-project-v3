@@ -54,6 +54,7 @@ const DonationForm = () => {
             numberOfShoes:1,
             dropPoints:'Depok',
         })
+        setSubmitting(false)
         window.location="/success";
       } else {
         // aww snap!
