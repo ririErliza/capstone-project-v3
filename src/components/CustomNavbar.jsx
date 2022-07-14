@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Navbar, Nav } from 'react-bootstrap';
 import logo from '../img/logo.png';
 import { Link, useLocation } from 'react-router-dom'
@@ -6,9 +6,10 @@ import { Link, useLocation } from 'react-router-dom'
 
 function CustomNavbar() {
   const location = useLocation()
+  const [expanded, setExpanded] = useState(false);
   return (
     <section id="nav-bar">
-    <Navbar collapseOnSelect expand="lg" className="Navbar navbar-dark">
+    <Navbar expanded={expanded} collapseOnSelect expand="lg" className="Navbar navbar-dark">
   <Navbar.Brand>
     <Link to="/">
   <img
@@ -20,22 +21,25 @@ function CustomNavbar() {
       />
       </Link>
   </Navbar.Brand>
-  <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+  <Navbar.Toggle onClick={() => setExpanded(expanded? false : "expanded")}  aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto">
 
     
-    <Nav.Link><Link to="/aboutUs" className='text-white mr-4 '> <div className={
+    <Link onClick={() => setExpanded(false)}
+               to="/aboutUs" className='text-white mr-4 '> <div className={
                 location.pathname === '/aboutUs' ? 'nav-link active' : 'nav-link'
-              }> ABOUT US </div> </Link></Nav.Link>
+              }> ABOUT US </div> </Link>
 
-<Nav.Link><Link to="/contactus" className='text-white mr-4 '> <div className={
+    <Link onClick={() => setExpanded(false)}
+              to="/contactus" className='text-white mr-4 '> <div className={
                 location.pathname === '/contactus' ? 'nav-link active' : 'nav-link'
-              } > CONTACT US </div> </Link></Nav.Link>
+              } > CONTACT US </div> </Link>
 
-<Nav.Link><Link to="/" className='text-white mr-4 '> <div className={
+  <Link onClick={() => setExpanded(false)}
+              to="/" className='text-white mr-4 '> <div className={
                 location.pathname === '/' ? 'nav-link active' : 'nav-link'
-              }> HOME </div>  </Link></Nav.Link>
+              }> HOME </div>  </Link>
     
     </Nav>
   </Navbar.Collapse>
