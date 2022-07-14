@@ -25,17 +25,17 @@ function CustomNavbar() {
     <Nav className="ml-auto">
 
     
-    <Link to="/aboutUs" className='text-white mr-4 '> <div className={
+    <Nav.Link><Link to="/aboutUs" className='text-white mr-4 '> <div className={
                 location.pathname === '/aboutUs' ? 'nav-link active' : 'nav-link'
-              }> ABOUT US </div> </Link>
+              }> ABOUT US </div> </Link></Nav.Link>
 
-    <Link to="/contactus" className='text-white mr-4 '> <div className={
+<Nav.Link><Link to="/contactus" className='text-white mr-4 '> <div className={
                 location.pathname === '/contactus' ? 'nav-link active' : 'nav-link'
-              } > CONTACT US </div> </Link>
+              } > CONTACT US </div> </Link></Nav.Link>
 
-    <Link to="/" className='text-white mr-4 '> <div className={
+<Nav.Link><Link to="/" className='text-white mr-4 '> <div className={
                 location.pathname === '/' ? 'nav-link active' : 'nav-link'
-              }> HOME </div>  </Link>
+              }> HOME </div>  </Link></Nav.Link>
     
     </Nav>
   </Navbar.Collapse>
