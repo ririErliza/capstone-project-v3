@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import {FaWpforms} from 'react-icons/fa'
 import {FiSend} from 'react-icons/fi'
 import { MdDoneOutline} from "react-icons/md"
+import { Link } from 'react-router-dom';
 
 const How = () => {
   return (
@@ -17,7 +18,7 @@ const How = () => {
                 
                     <div className="icon-circle"> <FaWpforms color='#17817f' size='50px'/></div>  
                     <h5 className='pt-3'>Step 1</h5>
-                   <p>Fill the "donation form" here</p> 
+                   <p>Fill the "donation form" <Link to='/donationForm'>here </Link></p> 
                 
         
             </Col>
@@ -26,7 +27,7 @@ const How = () => {
                
                  <div className="icon-circle"> <FiSend color='#17817f' size='50px'/></div>  
                     <h5 className='pt-3'>Step 2</h5>
-                  <p>Send the shoes here</p> 
+                  <p>Send the shoes in one of our drop point <Link to='/addresslist'>here</Link></p> 
                
         
             </Col>
