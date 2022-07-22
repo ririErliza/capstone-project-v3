@@ -32,7 +32,7 @@ const VolunteerForm = () => {
         setSubmitting(true)
         try {
           let response = await fetch(
-            'https://reviver-backend.herokuapp.com/volunteers',
+            'https://backend-reviver.herokuapp.com/volunteers',
             {
               method: 'POST',
               body: JSON.stringify(Volunteer),

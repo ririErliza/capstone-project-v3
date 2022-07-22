@@ -32,7 +32,7 @@ const DonationForm = () => {
     setSubmitting(true)
     try {
       let response = await fetch(
-        'https://reviver-backend.herokuapp.com/donors',
+        'https://backend-reviver.herokuapp.com/donors',
         {
           method: 'POST',
           body: JSON.stringify(Donation),
