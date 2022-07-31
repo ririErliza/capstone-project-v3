@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import {Navbar, Nav, Button } from 'react-bootstrap';
 import logo from '../img/logo.png';
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useCart } from 'react-use-cart';
 
 
 
 function CustomNavbar() {
+  const {
+    emptyCart
+  } = useCart();
   const user = localStorage.getItem("token")
   const location = useLocation()
   const [expanded, setExpanded] = useState(false);
@@ -14,6 +18,7 @@ function CustomNavbar() {
 
   const handleLogout =()=>{
     localStorage.removeItem("token");
+    emptyCart();
     Navigate("/login")
   }
   return (

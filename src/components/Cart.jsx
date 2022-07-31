@@ -28,7 +28,7 @@ const Cart = () => {
   height="auto"
   className="d-inline-block align-top ml-3"
   alt="reviver logo"
-/> <h4 className="text-center text-secondary"> Cart is empty</h4></div>
+/></div>
   return (
     <section className="py-4 container">
       <div className="row justify-content-center">
