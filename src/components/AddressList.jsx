@@ -11,7 +11,7 @@ const AddressList = () => {
         <Container className='py-3 px-5'>
             <h1 className='text-center text-green mb-5'>List of Address</h1>
                 <Row>
-                    <Table striped bordered hover size="sm" className='text-center text-green'>
+                    <Table striped bordered hover size="sm" className='text-center'>
                         <thead >
                             <tr>
                             <th>#</th>

@@ -31,7 +31,7 @@ const What = () => {
       <Card.Img variant="top" src={shoes2} />
       <Card.Body>
         <Card.Text>
-        Shoes covered by mud
+        Shoes has mud covering part of it
         </Card.Text>
       </Card.Body>
     </Card>

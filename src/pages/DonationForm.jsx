@@ -32,7 +32,7 @@ const DonationForm = () => {
     setSubmitting(true)
     try {
       let response = await fetch(
-        'https://backend-reviver.herokuapp.com/donors',
+        'https://reviver-backend.herokuapp.com/donors',
         {
           method: 'POST',
           body: JSON.stringify(Donation),
@@ -54,7 +54,6 @@ const DonationForm = () => {
             numberOfShoes:1,
             dropPoints:'Depok',
         })
-        setSubmitting(false)
         window.location="/success";
       } else {
         // aww snap!

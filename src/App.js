@@ -8,20 +8,24 @@ import Home from './pages/Home';
 import CustomNavbar from './components/CustomNavbar';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import How from './components/How';
-// import Why from './components/Why';
-// import DropPoints from './components/DropPoints';
 import ContactUs from './components/ContactUs';
 import AddressList from './components/AddressList';
 import Success from './pages/Success';
+import Shop from './pages/Shop';
+import SuccessPayment from './pages/SuccessPayment';
+import Cancel from './pages/Cancel';
+import LoginForm from './pages/LoginForm';
+import SignupForm from './pages/SignupForm';
 
 
 
 
 function App() {
+  
+
   return (
     <Router>
-
+       
         <CustomNavbar />
 
       
@@ -32,8 +36,17 @@ function App() {
           <Route path="/volunteerForm" element={<VolunteerForm />}   />
           <Route path="/contactus" element={<ContactUs />}   />
           <Route path="/addresslist" element={<AddressList />} />
+         
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/checkout-success" element={<SuccessPayment />} />
+          <Route path="/checkout-cancelled" element={<Cancel />} />
+
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/signup" element={<SignupForm />} />
+
+         
           <Route path="/success" element={<Success />} />
-          <Route path="*" component={NotFound}  />
+          <Route path="*" element={<NotFound />}  />
       </Routes>
 
       <Footer />

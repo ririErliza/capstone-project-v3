@@ -32,7 +32,7 @@ const VolunteerForm = () => {
         setSubmitting(true)
         try {
           let response = await fetch(
-            'https://backend-reviver.herokuapp.com/volunteers',
+            'https://reviver-backend.herokuapp.com/volunteers',
             {
               method: 'POST',
               body: JSON.stringify(Volunteer),
@@ -54,7 +54,7 @@ const VolunteerForm = () => {
                 location:'Depok',
                 duration: '3 Months',
             });
-            setSubmitting(false);
+
             window.location="/success";
           } else {
             // aww snap!

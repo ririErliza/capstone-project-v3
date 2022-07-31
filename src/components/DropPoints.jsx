@@ -13,7 +13,7 @@ const DropPoints = () => {
     <section id='dropPoints' className='dp-wrapper'>
     <Container className='px-5 text-center's>
       <h1 className='title-section text-center text-green pb-5'>Drop Points</h1>
-      <p className='text-center'> Here you can find the addresses of our drop points where you can drop or send your shoe waste</p>
+      <p className='text-center'> Here you can find the addresses of our drop points where you can drop or send the shoes waste</p>
       
       
 
