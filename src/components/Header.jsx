@@ -16,7 +16,7 @@ const Header = () => {
             <Row >
                 
                 <Col xs={12} md={6} id='header-text'>
-                        <p className="header-title"> Donate your shoes wastes </p>
+                        <p className="header-title"> Donate your shoe waste </p>
                         <p className='second-title'> and join us in less waste action</p>
                             <div className='typed-section'>
 
