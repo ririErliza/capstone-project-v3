@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Card, Col, Row } from "react-bootstrap";
 import { useCart } from "react-use-cart";
 import { MdDeleteForever } from "react-icons/md";
 import shoppingCart from '../img/shopping-cart.png';
@@ -22,13 +22,13 @@ const Cart = () => {
     emptyCart
   } = useCart();
 
-  if (isEmpty) return <div className="text-center mx-5"><img
+  if (isEmpty) return <><img
   src={shoppingCart}
-  width="500"
+  width="630"
   height="auto"
-  className="d-inline-block align-top ml-3"
+  className="img-fluid align-top ml-3"
   alt="reviver logo"
-/></div>
+/> <h4 className="text-center text-secondary"> Cart is empty</h4></>
   return (
     <section className="py-4 container">
       <div className="row justify-content-center">
@@ -38,76 +38,71 @@ const Cart = () => {
             Cart ({totalUniqueItems}) total Items: ({totalItems})
           </h5>
           <br />
-          <table className="table table-light table-hover m-0">
-            <tbody>
-              <tr>
-                <td style={{ padding: "0px 100px 0px 10px" }}>
-                  <b>Product</b>
-                </td>
-                <td style={{ padding: "0px 100px 0px 10px" }}>
-                  <b>Name</b>
-                </td>
-                <td style={{ padding: "0px 50px 0px 0px" }}>
-                  <b>Price($)</b>
-                </td>
-                <td style={{ padding: "0px 50px 0px 0px" }}>
-                  <b>Quantity</b>
-                </td>
-              </tr>
+          
               {items.map((item, index) => {
                 return (
-                  <tr key={index}>
-                    <td>
-                      <img src={item.img} style={{ height: "6rem" }} alt="" />
-                    </td>
-                    <td>{item.title}</td>
-                    <td>{item.price}</td>
-                    <td>
-                      <button
-                        style={{ color: "red", fontWeight:"700" }}
-                        className="btn btn-light btn-sm mr-1"
-                        onClick={() =>
-                          updateItemQuantity(item.id, item.quantity - 1)
-                        }
-                      >
-                        –
-                      </button>
-                      <button className="btn btn-light btn-sm" style={{ }}>
-                      {item.quantity}
-                      </button> 
-                      
-                      <button
-                        style={{ color: "green", fontWeight:"700" }}
-                        className="btn btn-light btn-sm ml-1"
-                        onClick={() =>
-                          updateItemQuantity(item.id, item.quantity + 1)
-                        }
-                      >
-                        +
-                      </button>
-                    </td>
-                    <td>
-                      
-                      
-                      <Button
-                        className="btn btn-light btn-sm"
-                        onClick={() => removeItem(item.id)}
-                      >
-                        <MdDeleteForever style={{ fontSize:"1.5em",color: "red" }}/>
-                      </Button>
-                    </td>
-                  </tr>
+                  <Card key={index} className="my-2">
+                    <Card.Body>
+                    <p style={{fontSize: "0.9rem" }}>{item.title}</p>
+                      <Row>
+                        <Col xs={12} md={4} className="text-center">
+                        
+                          <img src={item.img} style={{ height: "4rem" }} alt="" />
+                          
+                        
+                        </Col>
+                        <Col xs={12} md={4} className="text-center"> 
+                          <Card.Text style={{ fontSize:"1.3rem" }}> $ {item.price} </Card.Text>
+                          <Button
+                              style={{ fontWeight:"700",fontSize:"0.7rem" }}
+                              className="btn btn-light btn-sm mr-1"
+                              onClick={() =>
+                                updateItemQuantity(item.id, item.quantity - 1)
+                              }
+                            >
+                              –
+                            </Button>
+                            <Button className="btn btn-light btn-sm" style={{ fontSize:"0.7rem"}}>
+                            {item.quantity}
+                            </Button> 
+                            
+                            <Button
+                              style={{ fontWeight:"700",fontSize:"0.7rem" }}
+                              className="btn btn-light btn-sm ml-1 mr-1"
+                              onClick={() =>
+                                updateItemQuantity(item.id, item.quantity + 1)
+                              }
+                            >
+                              +
+                            </Button>
+                        
+                        </Col>
+                        <Col xs={12} md={4} className="text-center mt-3">
+                            
+
+                            <Button
+                              className="btn btn-light btn-sm"
+                              onClick={() => removeItem(item.id)}
+                            >
+                              <MdDeleteForever style={{ fontSize:"1.3em",color: "red" }}/>
+                        </Button>
+                            
+                        </Col>
+                      </Row>
+                    
+              
+                    </Card.Body>
+                </Card>
                 );
               })}
-            </tbody>
-          </table>
+            
         </div>
         <hr />
         <br />
         {/* <div> */}
         <div id="cart-footer">
         <div className="col-auto ms-auto">
-          <h3>Total Price: $ {cartTotal}</h3>
+          <h3 className="text-center">Total Price: $ {cartTotal}</h3>
         </div>
         <div className="col-auto ms-auto">
           <button className="btn btn-danger m-2" onClick={() => emptyCart()}>
