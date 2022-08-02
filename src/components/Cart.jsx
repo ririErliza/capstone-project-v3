@@ -22,13 +22,13 @@ const Cart = () => {
     emptyCart
   } = useCart();
 
-  if (isEmpty) return <><img
+  if (isEmpty) return <img
   src={shoppingCart}
   width="630"
   height="auto"
   className="img-fluid align-top ml-3"
   alt="reviver logo"
-/> <h4 className="text-center text-secondary"> Cart is empty</h4></>
+/>
   return (
     <section className="py-4 container">
       <div className="row justify-content-center">
