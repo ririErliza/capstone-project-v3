@@ -17,7 +17,7 @@ const How = () => {
                 
                     <div className="icon-circle"> <FaWpforms color='#17817f' size='50px'/></div>  
                     <h5 className='pt-3'>Step 1</h5>
-                   <p>Fill the "donation form" here</p> 
+                   <p>Fill the "donation form"</p> 
                 
         
             </Col>
@@ -26,7 +26,7 @@ const How = () => {
                
                  <div className="icon-circle"> <FiSend color='#17817f' size='50px'/></div>  
                     <h5 className='pt-3'>Step 2</h5>
-                  <p>Send the shoes here</p> 
+                  <p>Send the shoes</p> 
                
         
             </Col>
